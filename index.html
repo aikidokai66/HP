@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>早稲田大学合気道会</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #800000; /* Crimson */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            background-color: #800000;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            background-color: #a00000;
+        }
+
+        .hero {
+            background: url('background.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;
+            margin-top: 0px; /* Offset for fixed nav bar */
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            border-left: 5px solid #800000;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #800000;
+            color: white;
+            position: relative;
+        }
+
+        footer a {
+            color: #ffd700; /* Gold for contrast */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li a {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>早稲田大学合気道会</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">ホーム</a></li>
+        <li><a href="#about-aikido">合気道とは</a></li>
+        <li><a href="#about-us">当会について</a></li>
+        <li><a href="#recruitment">新歓情報</a></li>
+        <li><a href="#activities">活動紹介</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+        <li><a href="#twitter">ツイッター</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h2>早稲田大学合気道会へようこそ！</h2>
+</div>
+
+<main>
+    <section id="home">
+        <h2>ホーム</h2>
+        <p>早稲田大学合気道会の公式ホームページへようこそ！合気道の精神と活動を通じて、心身を鍛えましょう。</p>
+    </section>
+
+    <section id="about-aikido">
+        <h2>合気道とは</h2>
+        <p>合気道は日本の武道であり、相手との調和を大切にする武術です。</p>
+        <p>以下の動画で、合気道の美しさと動きをご覧ください。</p>
+        <iframe src="https://www.youtube.com/embed/J8515VaCgw8?si=sXuoBVfnhSSNf1cb" 
+                allowfullscreen></iframe>
+    </section>
+
+    <section id="about-us">
+        <h2>当会について</h2>
+        <p>早稲田大学合気道会は、初心者から経験者まで幅広く参加できる活動を行っています。</p>
+    </section>
+
+    <section id="recruitment">
+        <h2>新歓情報</h2>
+		<p>新入生歓迎会やイベントの予定はこちらからご確認ください！</p>
+    <iframe 
+        src="https://calendar.google.com/calendar/embed?src=aikidokai.66%40gmail.com&ctz=UTC" 
+        style="border: 0" 
+        width="100%" 
+        height="600" 
+        frameborder="0" 
+        scrolling="no">
+    </iframe>
+    </section>
+
+    <section id="activities">
+        <h2>活動紹介</h2>
+        <p>週に数回、大学内の道場で稽古を行っています。イベントや合宿もあります！</p>
+    </section>
+
+    <section id="faq">
+        <h2>よくある質問</h2>
+        <p>新入生や初心者がよく抱く質問への回答をご覧ください。</p>
+    </section>
+
+    <section id="contact">
+        <h2>お問い合わせ</h2>
+        <p>お問い合わせは以下のメールアドレスまでお願いいたします: <a href="mailto:aikido@example.com">aikido@example.com</a></p>
+    </section>
+
+    <section id="twitter">
+        <h2>ツイッター</h2>
+        <p>最新情報は公式ツイッターでご確認ください: <a href="https://twitter.com/example" target="_blank">@example</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 早稲田大学合気道会. All rights reserved.</p>
+</footer>
+
+</body>
